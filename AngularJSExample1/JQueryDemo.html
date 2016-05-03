@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+    <p>
+        <label>My Name: </label><br />
+        <input id="tbName" placeholder="Please type your name" />
+    </p>
+
+    <div id="dvName">
+        Hi there! My name is <strong><span id="spnName"></span></strong>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#dvName").hide();
+
+            $("#tbName").keyup(function () {
+                var name = $("#tbName").val();
+
+                if (name) {
+                    $("#spnName").text(name);
+                    $("#dvName").show();
+                } else {
+                    $("#dvName").hide();
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>

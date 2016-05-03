@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="/js/angular1.4.5.min.js"></script>
+</head>
+<body>
+    <p>
+        <label>My Name:</label><br />
+        <input type="text" placeholder="Please enter your name" ng-model="name" />
+    </p>
+
+    <div ng-show="name">
+        Hi there! My name is <strong><span>{{name}}</span></strong>.
+    </div>
+</body>
+</html>
