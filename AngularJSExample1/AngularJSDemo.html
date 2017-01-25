@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <html ng-app>
 <head>
-    <title></title>
-    <meta charset="utf-8" />
-    <script src="js/angular1.4.5.min.js"></script>
+    <title>AngularJS Demo</title>
+    <meta charset="utf-8"/>
+    <script src="js/angular1.4.5.min.js"></script>  
 </head>
 <body>
     <p>
-        <label>My Name: </label><br />
-        <input placeholder="Please type your name" ng-model="name" />
+        <label for="">My Name: </label>
+        <input type="text" name="tbName" id="tbName" placeholder="Please type your name" ng-model="name"/>
     </p>
 
     <div ng-show="name">
